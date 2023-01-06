@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import { useStore } from "../../stores/store";
 import { useEffect, useState } from "react";
 import { Stack } from "@mui/material";
-import Ideas from "./ideas";
+import Ideas from "./Ideas";
 import AddIdea from "./AddIdea";
 
 export default function page() {
