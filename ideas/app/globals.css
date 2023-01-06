@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 2% 15% 2% 15%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
