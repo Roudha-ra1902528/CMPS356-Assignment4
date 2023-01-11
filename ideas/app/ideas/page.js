@@ -16,10 +16,10 @@ export default function page() {
 
     useEffect(() => {
         if (user == -1)
-            axios.get('http://localhost:5000/api/identifier').then(res => setUser(res.data))
+            axios.get('https://cmps-356-assignment4.vercel.app/api/identifier').then(res => setUser(res.data))
     }, [])
 
-    const query = useQuery(['ideas', user], () => axios.get(`http://localhost:5000/api/${user}/ideas`))
+    const query = useQuery(['ideas', user], () => axios.get(`https://cmps-356-assignment4.vercel.app/api/${user}/ideas`))
 
     return (
         <Stack spacing={2} alignItems={'center'}>

@@ -12,7 +12,7 @@ export default function Ideas({ list, status }) {
 
     const queryClient = useQueryClient();
     const ideasMutation = useMutation((ideaId) => {
-        return axios.delete(`http://localhost:5000/api/${user}/ideas?ideaId=${ideaId}`)
+        return axios.delete(`https://cmps-356-assignment4.vercel.app/api/${user}/ideas?ideaId=${ideaId}`)
     }, {
         onSuccess: () => {
             queryClient.refetchQueries('ideas')

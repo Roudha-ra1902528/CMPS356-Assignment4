@@ -23,7 +23,7 @@ export default function AddIdea({ setDisplay, display }) {
     }
 
     const queryClient = useQueryClient();
-    const ideasMutation = useMutation((obj) => axios.post(`http://localhost:5000/api/${user}/ideas`, obj)
+    const ideasMutation = useMutation((obj) => axios.post(`https://cmps-356-assignment4.vercel.app/api/${user}/ideas`, obj)
         , {
             onSuccess: () => {
                 queryClient.refetchQueries('ideas')
